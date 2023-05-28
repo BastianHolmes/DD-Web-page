@@ -1,0 +1,30 @@
+@media (max-width: 800px) {
+  .header{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .header__categories{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:112.5em){
+  html{font-size: 75%;}
+};
+@media (max-width:75em){
+  html{font-size: 56.25%;}
+};
+@media (max-width:56.25em){
+  html{font-size: 50%;}
+};
+@media (max-width:37.5em){
+  html{font-size: 40%;}
+  
+  .content__cards{
+    grid-template-columns: repeat(auto-fill, 17rem);
+  }
+};

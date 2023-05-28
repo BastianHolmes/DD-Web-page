@@ -1,0 +1,29 @@
+.green-btn{
+  cursor: pointer;
+  width: 14rem;
+  height: 4.5rem;
+  margin:1rem 2rem 0;
+  
+  background: white;
+
+  line-height: 4.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  
+  display: inline-block;
+  text-align: center;
+
+  border-radius: 4.5rem;
+  box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+
+.green-btn:hover{
+  background: var(--color-theme);
+  box-shadow: var(--color-theme-shadow);
+  color: white;
+  transform: translateY(-7px);
+}

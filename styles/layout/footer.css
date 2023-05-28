@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--color-bg);
+  justify-content: space-between;
+
+}
+.footer__nav {
+  padding:3.2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer__nav-item {
+  width: 20rem;
+  padding-left: 3rem;
+}
+.footer__link:link,
+.footer__link:visited{
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color:var(--color-text);
+}
+
+.footer__nav-item:hover .footer__link{
+  color:var(--color-bg-light)
+}
+
+.footer__nav-item:hover{
+  background-color:var(--color-text);
+  transition: all .6s;
+  transform: translateX(3rem);
+}

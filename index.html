@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Test for DD</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header__categories">
+          <a href="#transistors" class="header__category">Транзисторы</a>
+          <a href="#diods" class="header__category">Диоды</a>
+          <a href="#resistors" class="header__category">Резисторы</a>
+          <a href="#capicators" class="header__category">Конденсаторы</a>
+        </nav>
+        <div class="header__dm">
+        <label for="checkbox" class="header__dm-label">Сменить тему</label>
+        <input id="checkbox" type="checkbox" class="header__checkbox"></input>
+        </div>
+      </header>
+      <div class="btn-up hide"></div>
+      <main class="content">
+        <div  class="content__categories">
+          <div class="content__category">
+            <h2 class="content__category-title">Транзисторы</h2>
+            <div id="transistors"></div>
+            </div>
+        <div class="content__category">
+          <h2 class="content__category-title">Диоды</h2>
+          <div id="diods"></div>
+        </div>
+        <div class="content__category">
+          <h2 class="content__category-title">Резисторы</h2>
+          <div id="resistors"></div>
+        </div>
+        <div class="content__category">
+          <h2 class="content__category-title">Конденсаторы</h2>
+          <div id="capicators"></div>
+        </div>
+       </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#transistors" class="footer__link">Транзисторы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#diods" class="footer__link">Диоды</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#resistors" class="footer__link">Резисторы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#capicators" class="footer__link">Конденсаторы</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="popup-bg">
+      <div class="popup">
+        <form action="URL" class="popup__content">
+          <h3  class="popup__headline">Покупка</h3>
+          <label for="num" class="popup__input-value">Введи количество компонентов для покупки</label>
+          <input class='popup__value-field' type="number" id="num" name="number" min="1" >
+          <label for="color" class="popup__color-btn">Выбери цвета для набора проводов</label>
+          <div class="popup__color-selector">
+            <input type="color" value="#eb250f" class="popup__color-input">
+            <input type="color" value="#1029e5" class="popup__color-input">
+            <input type="color" value="#f2eb07" class="popup__color-input">
+          </div>
+          <textarea class='popup__comment' name="" id="" cols="30" rows="10" placeholder="Комментарий к заказу" maxlength="2000"></textarea>
+        </form>
+        <div class="popup__btns">
+          <button class="popup__buy green-btn">Купить</button>
+          <button class="popup__close green-btn">Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div id="app"></div>
+    <script type="module" src="src/button-up.js"></script>
+    <script async type="module" src="main.js"></script>
+  </body>
+</html>
